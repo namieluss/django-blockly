@@ -1,0 +1,52 @@
+html, body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.blocklySvg {
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    font-weight: normal;
+    font-size: 140%;
+}
+
+#finish {
+    position: absolute;
+}
+
+/* Buttons */
+button {
+    margin: 5px;
+    margin-right: 12px;
+    margin-left: 0;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid #d43;
+    background-color: #d43;
+    color: white;
+}
+
+button:active {
+    border: 1px solid blue !important;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px #888;
+}
+
+#buttonDiv {
+    text-align: center;
+    padding-top: 2em;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+}

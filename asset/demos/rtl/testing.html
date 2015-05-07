@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Blockly Demo: RTL</title>
+  <script type="text/javascript" src="../../blockly_compressed.js"></script>
+  <script type="text/javascript" src="../../language/language_control.js"></script>
+  <script type="text/javascript" src="../../language/language_logic.js"></script>
+  <script type="text/javascript" src="../../language/language_math.js"></script>
+  <script type="text/javascript" src="../../language/language_text.js"></script>
+  <script type="text/javascript" src="../../language/language_lists.js"></script>
+  <script type="text/javascript" src="../../language/language_variables.js"></script>
+  <script type="text/javascript" src="../../language/language_procedures.js"></script>
+  <style>
+    body {
+      background-color: white;
+      font-family: sans-serif;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 140%;
+    }
+    #svgDiv {
+      height: 600px;
+      width: 800px;
+      border: 1px solid #ccc;
+    }
+  </style>
+  <script>
+    function init() {
+      Blockly.inject(document.getElementById('svgDiv'), {path: '../../', rtl: true});
+      Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, document.getElementById('startBlocks'));
+      //window.onbeforeunload = function() {
+      //  return 'Leaving this page will result in the loss of your work.';
+      //};
+    }
+  </script>
+</head>
+<body onload="init()">
+  <h1><a href="http://code.google.com/p/google-blockly/">Blockly</a> &gt;
+    <a href="../index.html">Demos</a> &gt; Right-to-Left</h1>
+
+  <div id="svgDiv"></div>
+
+
+</body>
+</html>
